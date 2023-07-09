@@ -1,5 +1,4 @@
-#ifndef ROBOTOMYREQUESTFORM_HPP
-#define ROBOTOMYREQUESTFORM_HPP
+#pragma once
 
 #include "AForm.hpp"
 
@@ -16,5 +15,3 @@ public:
 
     void execute(const Bureaucrat& executor) const;
 };
-
-#endif /* ROBOTOMYREQUESTFORM_HPP */
