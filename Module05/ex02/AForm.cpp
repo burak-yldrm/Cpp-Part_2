@@ -44,7 +44,7 @@ void AForm::beSigned(const Bureaucrat& bureaucrat) {
 }
 
 void AForm::execute(const Bureaucrat& executor) const {
-	std::cout << this->getName() << ", executed from " << executor.getName();
+	std::cout << this->getName() << ", executed from " << executor.getName() << "\n";
 }
 
 const char* AForm::GradeTooHighException::what() const throw() {
