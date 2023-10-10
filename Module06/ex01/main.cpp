@@ -10,11 +10,11 @@ int main()
 	serialized = Serializer::serialize(data);
 	std::cout << "Serialized: " << serialized << std::endl;
 
-	data = Serializer::deserialize(serialized);
+	Data* data_2 = Serializer::deserialize(serialized);
 	std::cout << "Deserialized: " << std::endl;
-	std::cout << "s1: " << data->s1 << std::endl;
-	std::cout << "n: " << data->value << std::endl;
-	std::cout << "s2: " << data->s2 << std::endl;
+	std::cout << "s1: " << data_2->s1 << std::endl;
+	std::cout << "s2: " << data_2->s2 << std::endl;
+	std::cout << "n: " << data_2->value << std::endl;
 
 	delete data;
 	return (0);
