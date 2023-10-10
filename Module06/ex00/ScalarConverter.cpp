@@ -21,7 +21,7 @@ void ScalarConverter::printChar(std::string const &str)
 	char charValue = static_cast<char>(atoi(str.c_str())); 
 	std::cout << "char: ";
 
-	if (isprint(charValue) == 0 || isdigit(str[0]) == 0)
+	if (isascii(charValue) == 0 || isdigit(str[0]) == 0)
 		std::cout << "impossible" << std::endl;
 	else if (isprint(charValue))
 		std::cout << "'" << charValue << "'" << std::endl;
@@ -34,7 +34,7 @@ void ScalarConverter::printInt(std::string const &str)
 	long int intValue = atol(str.c_str());
 	std::cout << "int: ";
 
-	if (((intValue > INT_MAX || intValue < INT_MIN) && str.length() >= 10))
+	if (((intValue > INT_MAX || intValue < INT_MIN) && str.length() >= 10) || isdigit(str[0]) == 0)
 		std::cout << "impossible" << std::endl;
 	else
 		std::cout << intValue << std::endl;

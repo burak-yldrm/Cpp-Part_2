@@ -1,4 +1,4 @@
-NAME = Conversion_of_scalar_types
+NAME = convert
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
