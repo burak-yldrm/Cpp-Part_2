@@ -1,4 +1,4 @@
-NAME = MutantStack
+NAME = btc
 GXX = g++
 
 FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
